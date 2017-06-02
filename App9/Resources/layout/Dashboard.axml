@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/scrollView1"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent" >
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+            android:background="@android:color/white"
+      android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+           android:background="@drawable/SpinnerShape"
+        android:orientation="horizontal">
+    
+
+  <Spinner android:id="@+id/ddDashboardYear"
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+           android:minHeight="24dp"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+      ></Spinner>
+      
+     
+
+
+    </LinearLayout>
+
+
+
+    <TableLayout
+       android:id="@+id/dashboradTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:background="@drawable/my_shape_file">
+      <TableRow
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/txtTransactions"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#10A062"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="20dip"
+            android:gravity="center" />
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#17A668"
+            android:textColor="#FFFFFF"
+            android:ems="5"
+            android:text="Transactions"
+            android:padding="20dip"
+            android:gravity="left" />
+      </TableRow>
+      <TableRow
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/txtClaims"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:background="#208DBE"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:gravity="center" />
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#2195C9"
+            android:textColor="#FFFFFF"
+            android:ems="5"
+            android:text="Claims"
+            android:padding="20dip"
+            android:gravity="left" />
+      </TableRow>
+      <TableRow
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/txtParticipants"
+            android:layout_weight="3"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:background="#6E1881"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:gravity="center" />
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#852B99"
+            android:textColor="#FFFFFF"
+            android:ems="5"
+            android:text="Participants"
+            android:padding="20dip"
+            android:gravity="left" />
+      </TableRow>
+      <TableRow
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/txtFilteredTransactions"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:background="#CB871B"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:gravity="center" />
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#FFB848"
+            android:textColor="#FFFFFF"
+            android:ems="5"
+            android:text="Filtered Transaction"
+            android:padding="20dip"
+            android:gravity="left" />
+      </TableRow>
+      <TableRow
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/txtTransactionsWithNoClaims"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:background="#CB871B"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:gravity="center" />
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#FFB848"
+            android:textColor="#FFFFFF"
+            android:ems="5"
+            android:text="Transactions with No Claims"
+            android:padding="20dip"
+            android:gravity="left" />
+      </TableRow>
+      <TableRow
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/txtYetToSubstantiated"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:background="#CB871B"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:gravity="center" />
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#FFB848"
+            android:textColor="#FFFFFF"
+            android:ems="5"
+            android:text="Yet to Substantiated"
+            android:padding="20dip"
+            android:gravity="left" />
+      </TableRow>
+      <TableRow
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/txtSubstantiatedTransactions"
+            android:textStyle="bold"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:background="#CB871B"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:gravity="center" />
+        <TextView
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#FFB848"
+            android:textColor="#FFFFFF"
+            android:ems="5"
+            android:text="Substantiated Transactions"
+            android:padding="20dip"
+            android:gravity="left" />
+      </TableRow>
+    </TableLayout>
+  </LinearLayout>
+</ScrollView>

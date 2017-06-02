@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+    <item android:id="@+id/nav_home" android:icon="@drawable/ic_home_black_24dp" android:title="Home" />
+
+  </group>
+
+  <item android:title="Reports">
+
+    <menu>
+      <item android:title="Claim Audit Report" android:icon="@drawable/Claims_Audit_Report_36" android:id="@+id/nav_claim_audit_report"/>
+      <item android:title="Transaction Audit Report"  android:icon="@drawable/Transaction_Audit_Report_36"  android:id="@+id/nav_transaction_audit_report"/>
+      <item android:title="Employer Report"    android:icon="@drawable/Employee_Report_36"  android:id="@+id/nav_employer_report"/>
+      <item android:title="Transaction Feed"   android:icon="@drawable/Transaction_Feed_36"  android:id="@+id/nav_transaction_feed"/>
+      <item android:title="Carrier Feed"   android:icon="@drawable/Carrier_Feed_36"  android:id="@+id/nav_carrier_feed" />
+      <item android:title="Substantiation Files"   android:icon="@drawable/Substantiated_File_36"  android:id="@+id/nav_substantiation_file"/>
+      <item android:title="Employer Matching Report"   android:icon="@drawable/Employer_Matchin_Report_36" android:id="@+id/nav_employer_matching_report"/>
+    </menu>
+
+  </item>
+
+  <item android:title="Search" >
+
+    <menu>
+      <item android:title="Claims" android:icon="@drawable/Search_Claim_36"  android:id="@+id/nav_search_claims"/>
+      <item android:title="Transactions" android:icon="@drawable/Search_Transaction_36"  android:id="@+id/nav_search_transactions"/>
+    </menu>
+
+  </item>
+
+
+
+
+</menu>
